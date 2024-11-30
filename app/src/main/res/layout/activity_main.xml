@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Movie Name Input -->
+    <EditText
+        android:id="@+id/movieNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter movie name"
+        android:inputType="text"
+        android:padding="16dp"
+        />
+
+    <!-- Rating Input (1 to 10) -->
+    <SeekBar
+        android:id="@+id/ratingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10"
+        android:progress="5" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Movie" />
+
+    <!-- Movie List -->
+    <TextView
+        android:id="@+id/movieList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movie List"
+        android:paddingTop="20dp"
+        android:textSize="18sp"/>
+</LinearLayout>
